@@ -1,0 +1,100 @@
+/* ===========================
+   Dashboard Background
+=========================== */
+
+.stApp {
+    background: linear-gradient(135deg, #ffffff 0%, #8dc3f9 50%, #0285ff 100%);
+}
+
+.dashboard-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    /* Change to any color */
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.stButton>button {
+    background-color: #1565C0;
+    /* Blue */
+    color: white;
+    /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+[data-testid="stAlert"] {
+    background-color: #afd7f8;
+    color: #0845a2;
+    border-radius: 12px;
+    border: 1px solid #90CAF9;
+}
+
+/* ===========================
+   Home Page Title
+=========================== */
+
+.home-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #021b98;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.home-subtitle {
+    font-size: 25px;
+    color: #09458e;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* ===========================
+   Chart Cards
+=========================== */
+/* ===========================
+   KPI Cards
+=========================== */
+
+[data-testid="stMetric"] {
+    background: #8dc3f9;
+    border-radius: 15px;
+    border: 1px solid #B8DFFF;
+    padding: 15px;
+    box-shadow: 0 4px 10px #71747400;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(135deg, #ffffff 0%, #8dc3f9 50%, #0285ff 100%);
+}
+
+/* Sidebar Text */
+[data-testid="stSidebar"] * {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+/* Selectbox & Multiselect */
+.stSelectbox>div>div,
+.stMultiSelect>div>div {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Dropdown input */
+[data-baseweb="select"] {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Selected value */
+[data-baseweb="select"] span {
+    color: rgb(255, 255, 255) !important;
+}
