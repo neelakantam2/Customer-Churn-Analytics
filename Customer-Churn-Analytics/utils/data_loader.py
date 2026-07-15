@@ -7,7 +7,7 @@ from pathlib import Path
 @st.cache_data
 def load_data():
 
-   data_path = Path(__file__).parent.parent / "data" / "European_Bank_Cleaned.csv"
+    data_path = Path(__file__).parent.parent / "data" / "European_Bank_Cleaned.csv"
     df = pd.read_csv(data_path)
     df.drop(
         columns=[ "CustomerId"],
