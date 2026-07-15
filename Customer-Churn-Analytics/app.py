@@ -29,9 +29,13 @@ from page.high_value_customer import show_high_value
 # LOAD CSS
 # ==========================================
 def load_css():
-   css_path = Path(__file__).parent / "style" / "style.css"
+    css_path = Path(__file__).parent / "style" / "style.css"
+
     with open(css_path, "r", encoding="utf-8") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+        st.markdown(
+            f"<style>{f.read()}</style>",
+            unsafe_allow_html=True,
+        )
 
 load_css()
 
