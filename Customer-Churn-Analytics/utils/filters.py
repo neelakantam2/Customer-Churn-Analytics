@@ -14,7 +14,7 @@ def sidebar_filters(df):
         <img src="data:image/png;base64,{logo}"
              style="
                 width:200px;
-                height:2000px;
+                height:200px;
                 border-radius:50%;
                 object-fit:cover;
                 background:white;
