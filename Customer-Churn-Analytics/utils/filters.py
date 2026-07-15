@@ -1,9 +1,11 @@
 import streamlit as st
+from pathlib import Path
 
 def sidebar_filters(df):
     import base64
     def get_logo():
-        with open("assets/logo.png", "rb") as IMG:
+        logo_path = Path(__file__).parent.parent / "assets" / "logo.png"
+        with open(logo_path, "rb") as IMG:
             return base64.b64encode(IMG.read()).decode()
     logo = get_logo()
     st.sidebar.markdown(
@@ -12,7 +14,7 @@ def sidebar_filters(df):
         <img src="data:image/png;base64,{logo}"
              style="
                 width:200px;
-                height:20cg0px;
+                height:2000px;
                 border-radius:50%;
                 object-fit:cover;
                 background:white;
