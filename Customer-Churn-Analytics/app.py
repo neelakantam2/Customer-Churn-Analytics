@@ -1,4 +1,5 @@
 import streamlit as st
+from pathlib import Path
 
 # ==========================================
 # PAGE CONFIGURATION
@@ -28,11 +29,9 @@ from page.high_value_customer import show_high_value
 # LOAD CSS
 # ==========================================
 def load_css():
-    with open("style/style.css") as f:
-        st.markdown(
-            f"<style>{f.read()}</style>",
-            unsafe_allow_html=True
-        )
+   css_path = Path(__file__).parent / "style" / "style.css"
+    with open(css_path, "r", encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css()
 
